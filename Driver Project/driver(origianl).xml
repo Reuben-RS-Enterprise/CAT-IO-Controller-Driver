@@ -1,0 +1,1610 @@
+<devicedata>
+  <copyright>Copyright 2023 RS Enterprise.  All rights reserved.</copyright>
+  <manufacturer>Complete Audio Technology</manufacturer>
+  <creator>Reuben Stick - www.RSenterprise.tech</creator>
+  <created>06/12/2023 7:13 PM</created>
+  <modified>06/12/2023 7:17 PM</modified>
+  <name>SmartControl IO Controller SC168SD</name>
+  <model>SC168SD</model>
+  <small>devices_sm/cat_sc168sd_16.gif</small>
+  <large>devices_lg/cat_sc168sd_32.gif</large>
+  <control>lua_gen</control>
+  <proxy>cat_sc168sd</proxy>
+  <driver>DriverWorks</driver>
+  <composer_categories>
+    <category>Controllers</category>
+  </composer_categories>
+  <powermanagementmethod>AlwaysOn</powermanagementmethod>
+  <events>
+    <event>
+      <id>1</id>
+      <name>Input 1 Opens</name>
+      <description>When Input 1 on NAME OPENS</description>
+    </event>
+    <event>
+      <id>2</id>
+      <name>Input 1 Closes</name>
+      <description>When Input 1 on NAME CLOSES</description>
+    </event>
+    <event>
+      <id>3</id>
+      <name>Input 2 Opens</name>
+      <description>When Input 2 on NAME OPENS</description>
+    </event>
+    <event>
+      <id>4</id>
+      <name>Input 2 Closes</name>
+      <description>When Input 2 on NAME CLOSES</description>
+    </event>
+    <event>
+      <id>5</id>
+      <name>Input 3 Opens</name>
+      <description>When Input 3 on NAME OPENS</description>
+    </event>
+    <event>
+      <id>6</id>
+      <name>Input 3 Closes</name>
+      <description>When Input 3 on NAME CLOSES</description>
+    </event>
+    <event>
+      <id>7</id>
+      <name>Input 4 Opens</name>
+      <description>When Input 4 on NAME OPENS</description>
+    </event>
+    <event>
+      <id>8</id>
+      <name>Input 4 Closes</name>
+      <description>When Input 4 on NAME CLOSES</description>
+    </event>
+    <event>
+      <id>9</id>
+      <name>Input 5 Opens</name>
+      <description>When Input 5 on NAME OPENS</description>
+    </event>
+    <event>
+      <id>10</id>
+      <name>Input 5 Closes</name>
+      <description>When Input 5 on NAME CLOSES</description>
+    </event>
+    <event>
+      <id>11</id>
+      <name>Input 6 Opens</name>
+      <description>When Input 6 on NAME OPENS</description>
+    </event>
+    <event>
+      <id>12</id>
+      <name>Input 6 Closes</name>
+      <description>When Input 6 on NAME CLOSES</description>
+    </event>
+    <event>
+      <id>13</id>
+      <name>Input 7 Opens</name>
+      <description>When Input 7 on NAME OPENS</description>
+    </event>
+    <event>
+      <id>14</id>
+      <name>Input 7 Closes</name>
+      <description>When Input 7 on NAME CLOSES</description>
+    </event>
+    <event>
+      <id>15</id>
+      <name>Input 8 Opens</name>
+      <description>When Input 8 on NAME OPENS</description>
+    </event>
+    <event>
+      <id>16</id>
+      <name>Input 8 Closes</name>
+      <description>When Input 8 on NAME CLOSES</description>
+    </event>
+  </events>
+  <config>
+    <serialsettings>9600 8 none 1 none</serialsettings>
+    <properties>
+      <property>
+        <name>Board Address</name>
+        <type>LIST</type>
+        <items>
+          <item></item>
+          <item>A</item>
+          <item>B</item>
+          <item>C</item>
+          <item>D</item>
+          <item>E</item>
+          <item>F</item>
+          <item>G</item>
+          <item>H</item>
+          <item>I</item>
+          <item>J</item>
+          <item>K</item>
+          <item>L</item>
+          <item>M</item>
+          <item>N</item>
+          <item>O</item>
+          <item>P</item>
+        </items>
+        <default></default>
+        <readonly>false</readonly>
+      </property>
+      <property>
+        <name>First Board in Daisy Chain</name>
+        <type>LIST</type>
+        <items>
+          <item></item>
+          <item>YES</item>
+          <item>NO</item>
+        </items>
+        <default></default>
+        <readonly>false</readonly>
+      </property>
+      <property>
+        <name>Debug Mode</name>
+        <type>LIST</type>
+        <items>
+          <item>Off</item>
+          <item>Print</item>
+          <item>Log</item>
+          <item>Print and Log</item>
+        </items>
+        <default>Off</default>
+        <readonly>false</readonly>
+      </property>
+    </properties>
+    <actions>
+      <action>
+        <name>Outputs ALL OFF</name>
+        <command>Outputs ALL OFF</command>
+      </action>
+      <action>
+        <name>Outputs ALL ON</name>
+        <command>Outputs ALL ON</command>
+      </action>
+      <action>
+        <name>Output 16 Momentary</name>
+        <command>Output 16 Momentary</command>
+      </action>
+      <action>
+        <name>Output 16 Toggle</name>
+        <command>Output 16 Toggle</command>
+      </action>
+      <action>
+        <name>Output 16 OFF</name>
+        <command>Output 16 OFF</command>
+      </action>
+      <action>
+        <name>Output 16 ON</name>
+        <command>Output 16 ON</command>
+      </action>
+      <action>
+        <name>Output 15 Momentary</name>
+        <command>Output 15 Momentary</command>
+      </action>
+      <action>
+        <name>Output 15 Toggle</name>
+        <command>Output 15 Toggle</command>
+      </action>
+      <action>
+        <name>Output 15 OFF</name>
+        <command>Output 15 OFF</command>
+      </action>
+      <action>
+        <name>Output 15 ON</name>
+        <command>Output 15 ON</command>
+      </action>
+      <action>
+        <name>Output 14 Momentary</name>
+        <command>Output 14 Momentary</command>
+      </action>
+      <action>
+        <name>Output 14 Toggle</name>
+        <command>Output 14 Toggle</command>
+      </action>
+      <action>
+        <name>Output 14 OFF</name>
+        <command>Output 14 OFF</command>
+      </action>
+      <action>
+        <name>Output 14 ON</name>
+        <command>Output 14 ON</command>
+      </action>
+      <action>
+        <name>Output 13 Momentary</name>
+        <command>Output 13 Momentary</command>
+      </action>
+      <action>
+        <name>Output 13 Toggle</name>
+        <command>Output 13 Toggle</command>
+      </action>
+      <action>
+        <name>Output 13 OFF</name>
+        <command>Output 13 OFF</command>
+      </action>
+      <action>
+        <name>Output 13 ON</name>
+        <command>Output 13 ON</command>
+      </action>
+      <action>
+        <name>Output 12 Momentary</name>
+        <command>Output 12 Momentary</command>
+      </action>
+      <action>
+        <name>Output 12 Toggle</name>
+        <command>Output 12 Toggle</command>
+      </action>
+      <action>
+        <name>Output 12 OFF</name>
+        <command>Output 12 OFF</command>
+      </action>
+      <action>
+        <name>Output 12 ON</name>
+        <command>Output 12 ON</command>
+      </action>
+      <action>
+        <name>Output 11 Momentary</name>
+        <command>Output 11 Momentary</command>
+      </action>
+      <action>
+        <name>Output 11 Toggle</name>
+        <command>Output 11 Toggle</command>
+      </action>
+      <action>
+        <name>Output 11 OFF</name>
+        <command>Output 11 OFF</command>
+      </action>
+      <action>
+        <name>Output 11 ON</name>
+        <command>Output 11 ON</command>
+      </action>
+      <action>
+        <name>Output 10 Momentary</name>
+        <command>Output 10 Momentary</command>
+      </action>
+      <action>
+        <name>Output 10 Toggle</name>
+        <command>Output 10 Toggle</command>
+      </action>
+      <action>
+        <name>Output 10 OFF</name>
+        <command>Output 10 OFF</command>
+      </action>
+      <action>
+        <name>Output 10 ON</name>
+        <command>Output 10 ON</command>
+      </action>
+      <action>
+        <name>Output 9 Momentary</name>
+        <command>Output 9 Momentary</command>
+      </action>
+      <action>
+        <name>Output 9 Toggle</name>
+        <command>Output 9 Toggle</command>
+      </action>
+      <action>
+        <name>Output 9 OFF</name>
+        <command>Output 9 OFF</command>
+      </action>
+      <action>
+        <name>Output 9 ON</name>
+        <command>Output 9 ON</command>
+      </action>
+      <action>
+        <name>Output 8 Momentary</name>
+        <command>Output 8 Momentary</command>
+      </action>
+      <action>
+        <name>Output 8 Toggle</name>
+        <command>Output 8 Toggle</command>
+      </action>
+      <action>
+        <name>Output 8 OFF</name>
+        <command>Output 8 OFF</command>
+      </action>
+      <action>
+        <name>Output 8 ON</name>
+        <command>Output 8 ON</command>
+      </action>
+      <action>
+        <name>Output 7 Momentary</name>
+        <command>Output 7 Momentary</command>
+      </action>
+      <action>
+        <name>Output 7 Toggle</name>
+        <command>Output 7 Toggle</command>
+      </action>
+      <action>
+        <name>Output 7 OFF</name>
+        <command>Output 7 OFF</command>
+      </action>
+      <action>
+        <name>Output 7 ON</name>
+        <command>Output 7 ON</command>
+      </action>
+      <action>
+        <name>Output 6 Momentary</name>
+        <command>Output 6 Momentary</command>
+      </action>
+      <action>
+        <name>Output 6 Toggle</name>
+        <command>Output 6 Toggle</command>
+      </action>
+      <action>
+        <name>Output 6 OFF</name>
+        <command>Output 6 OFF</command>
+      </action>
+      <action>
+        <name>Output 6 ON</name>
+        <command>Output 6 ON</command>
+      </action>
+      <action>
+        <name>Output 5 Momentary</name>
+        <command>Output 5 Momentary</command>
+      </action>
+      <action>
+        <name>Output 5 Toggle</name>
+        <command>Output 5 Toggle</command>
+      </action>
+      <action>
+        <name>Output 5 OFF</name>
+        <command>Output 5 OFF</command>
+      </action>
+      <action>
+        <name>Output 5 ON</name>
+        <command>Output 5 ON</command>
+      </action>
+      <action>
+        <name>Output 4 Momentary</name>
+        <command>Output 4 Momentary</command>
+      </action>
+      <action>
+        <name>Output 4 Toggle</name>
+        <command>Output 4 Toggle</command>
+      </action>
+      <action>
+        <name>Output 4 OFF</name>
+        <command>Output 4 OFF</command>
+      </action>
+      <action>
+        <name>Output 4 ON</name>
+        <command>Output 4 ON</command>
+      </action>
+      <action>
+        <name>Output 3 Momentary</name>
+        <command>Output 3 Momentary</command>
+      </action>
+      <action>
+        <name>Output 3 Toggle</name>
+        <command>Output 3 Toggle</command>
+      </action>
+      <action>
+        <name>Output 3 OFF</name>
+        <command>Output 3 OFF</command>
+      </action>
+      <action>
+        <name>Output 3 ON</name>
+        <command>Output 3 ON</command>
+      </action>
+      <action>
+        <name>Output 2 Momentary</name>
+        <command>Output 2 Momentary</command>
+      </action>
+      <action>
+        <name>Output 2 Toggle</name>
+        <command>Output 2 Toggle</command>
+      </action>
+      <action>
+        <name>Output 2 OFF</name>
+        <command>Output 2 OFF</command>
+      </action>
+      <action>
+        <name>Output 2 ON</name>
+        <command>Output 2 ON</command>
+      </action>
+      <action>
+        <name>Output 1 Momentary</name>
+        <command>Output 1 Momentary</command>
+      </action>
+      <action>
+        <name>Output 1 Toggle</name>
+        <command>Output 1 Toggle</command>
+      </action>
+      <action>
+        <name>Output 1 OFF</name>
+        <command>Output 1 OFF</command>
+      </action>
+      <action>
+        <name>Output 1 ON</name>
+        <command>Output 1 ON</command>
+      </action>
+    </actions>
+    <commands>
+      <command>
+        <name>Output 1</name>
+        <description>Output 1 on NAME will perform the action PARAM1</description>
+        <params>
+          <param>
+            <name>Action</name>
+            <type>LIST</type>
+            <items>
+              <item>ON</item>
+              <item>OFF</item>
+              <item>Toggle</item>
+              <item>Momentary</item>
+            </items>
+          </param>
+        </params>
+      </command>
+      <command>
+        <name>Output 2</name>
+        <description>Output 2 on NAME will perform the action PARAM1</description>
+        <params>
+          <param>
+            <name>Action</name>
+            <type>LIST</type>
+            <items>
+              <item>ON</item>
+              <item>OFF</item>
+              <item>Toggle</item>
+              <item>Momentary</item>
+            </items>
+          </param>
+        </params>
+      </command>
+      <command>
+        <name>Output 3</name>
+        <description>Output 3 on NAME will perform the action PARAM1</description>
+        <params>
+          <param>
+            <name>Action</name>
+            <type>LIST</type>
+            <items>
+              <item>ON</item>
+              <item>OFF</item>
+              <item>Toggle</item>
+              <item>Momentary</item>
+            </items>
+          </param>
+        </params>
+      </command>
+      <command>
+        <name>Output 4</name>
+        <description>Output 4 on NAME will perform the action PARAM1</description>
+        <params>
+          <param>
+            <name>Action</name>
+            <type>LIST</type>
+            <items>
+              <item>ON</item>
+              <item>OFF</item>
+              <item>Toggle</item>
+              <item>Momentary</item>
+            </items>
+          </param>
+        </params>
+      </command>
+      <command>
+        <name>Output 5</name>
+        <description>Output 5 on NAME will perform the action PARAM1</description>
+        <params>
+          <param>
+            <name>Action</name>
+            <type>LIST</type>
+            <items>
+              <item>ON</item>
+              <item>OFF</item>
+              <item>Toggle</item>
+              <item>Momentary</item>
+            </items>
+          </param>
+        </params>
+      </command>
+      <command>
+        <name>Output 6</name>
+        <description>Output 6 on NAME will perform the action PARAM1</description>
+        <params>
+          <param>
+            <name>Action</name>
+            <type>LIST</type>
+            <items>
+              <item>ON</item>
+              <item>OFF</item>
+              <item>Toggle</item>
+              <item>Momentary</item>
+            </items>
+          </param>
+        </params>
+      </command>
+      <command>
+        <name>Output 7</name>
+        <description>Output 7 on NAME will perform the action PARAM1</description>
+        <params>
+          <param>
+            <name>Action</name>
+            <type>LIST</type>
+            <items>
+              <item>ON</item>
+              <item>OFF</item>
+              <item>Toggle</item>
+              <item>Momentary</item>
+            </items>
+          </param>
+        </params>
+      </command>
+      <command>
+        <name>Output 8</name>
+        <description>Output 8 on NAME will perform the action PARAM1</description>
+        <params>
+          <param>
+            <name>Action</name>
+            <type>LIST</type>
+            <items>
+              <item>ON</item>
+              <item>OFF</item>
+              <item>Toggle</item>
+              <item>Momentary</item>
+            </items>
+          </param>
+        </params>
+      </command>
+      <command>
+        <name>Output 9</name>
+        <description>Output 9 on NAME will perform the action PARAM1</description>
+        <params>
+          <param>
+            <name>Action</name>
+            <type>LIST</type>
+            <items>
+              <item>ON</item>
+              <item>OFF</item>
+              <item>Toggle</item>
+              <item>Momentary</item>
+            </items>
+          </param>
+        </params>
+      </command>
+      <command>
+        <name>Output 10</name>
+        <description>Output 10 on NAME will perform the action PARAM1</description>
+        <params>
+          <param>
+            <name>Action</name>
+            <type>LIST</type>
+            <items>
+              <item>ON</item>
+              <item>OFF</item>
+              <item>Toggle</item>
+              <item>Momentary</item>
+            </items>
+          </param>
+        </params>
+      </command>
+      <command>
+        <name>Output 11</name>
+        <description>Output 11 on NAME will perform the action PARAM1</description>
+        <params>
+          <param>
+            <name>Action</name>
+            <type>LIST</type>
+            <items>
+              <item>ON</item>
+              <item>OFF</item>
+              <item>Toggle</item>
+              <item>Momentary</item>
+            </items>
+          </param>
+        </params>
+      </command>
+      <command>
+        <name>Output 12</name>
+        <description>Output 12 on NAME will perform the action PARAM1</description>
+        <params>
+          <param>
+            <name>Action</name>
+            <type>LIST</type>
+            <items>
+              <item>ON</item>
+              <item>OFF</item>
+              <item>Toggle</item>
+              <item>Momentary</item>
+            </items>
+          </param>
+        </params>
+      </command>
+      <command>
+        <name>Output 13</name>
+        <description>Output 13 on NAME will perform the action PARAM1</description>
+        <params>
+          <param>
+            <name>Action</name>
+            <type>LIST</type>
+            <items>
+              <item>ON</item>
+              <item>OFF</item>
+              <item>Toggle</item>
+              <item>Momentary</item>
+            </items>
+          </param>
+        </params>
+      </command>
+      <command>
+        <name>Output 14</name>
+        <description>Output 14 on NAME will perform the action PARAM1</description>
+        <params>
+          <param>
+            <name>Action</name>
+            <type>LIST</type>
+            <items>
+              <item>ON</item>
+              <item>OFF</item>
+              <item>Toggle</item>
+              <item>Momentary</item>
+            </items>
+          </param>
+        </params>
+      </command>
+      <command>
+        <name>Output 15</name>
+        <description>Output 15 on NAME will perform the action PARAM1</description>
+        <params>
+          <param>
+            <name>Action</name>
+            <type>LIST</type>
+            <items>
+              <item>ON</item>
+              <item>OFF</item>
+              <item>Toggle</item>
+              <item>Momentary</item>
+            </items>
+          </param>
+        </params>
+      </command>
+      <command>
+        <name>Output 16</name>
+        <description>Output 16 on NAME will perform the action PARAM1</description>
+        <params>
+          <param>
+            <name>Action</name>
+            <type>LIST</type>
+            <items>
+              <item>ON</item>
+              <item>OFF</item>
+              <item>Toggle</item>
+              <item>Momentary</item>
+            </items>
+          </param>
+        </params>
+      </command>
+      <command>
+        <name>Output Latch</name>
+        <description>The Output Latch on NAME will be sent the value PARAM1</description>
+        <params>
+          <param>
+            <name>Value</name>
+            <type>STRING</type>
+          </param>
+        </params>
+      </command>
+    </commands>
+    <script file="driver.lua"></script>
+    <documentation file="documentation.rtf" />
+  </config>
+  <capabilities>
+    <on_off>True</on_off>
+    <has_blinds>True</has_blinds>
+    <set_level>False</set_level>
+    <ramp_level>False</ramp_level>
+    <has_single_led>False</has_single_led>
+    <has_double_led>False</has_double_led>
+    <can_detach_buttons>False</can_detach_buttons>
+    <can_detach_led>False</can_detach_led>
+    <has_press_events>True</has_press_events>
+    <has_release_events>True</has_release_events>
+    <single_button>True</single_button>
+    <double_button>True</double_button>
+    <do_push>False</do_push>
+    <do_release>False</do_release>
+  </capabilities>
+  <connections>
+    <connection>
+      <id>1</id>
+      <facing>6</facing>
+      <connectionname>Serial IN</connectionname>
+      <type>1</type>
+      <consumer>True</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <classname>RS_232</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>2</id>
+      <facing>6</facing>
+      <connectionname>Serial OUT</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <classname>RS_232</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>3</id>
+      <facing>6</facing>
+      <connectionname>Input 1</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <classname>CONTACT_SENSOR</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>4</id>
+      <facing>6</facing>
+      <connectionname>Input 2</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <classname>CONTACT_SENSOR</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>5</id>
+      <facing>6</facing>
+      <connectionname>Input 3</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <classname>CONTACT_SENSOR</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>6</id>
+      <facing>6</facing>
+      <connectionname>Input 4</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <classname>CONTACT_SENSOR</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>7</id>
+      <facing>6</facing>
+      <connectionname>Input 5</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <classname>CONTACT_SENSOR</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>8</id>
+      <facing>6</facing>
+      <connectionname>Input 6</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <classname>CONTACT_SENSOR</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>9</id>
+      <facing>6</facing>
+      <connectionname>Input 7</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <classname>CONTACT_SENSOR</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>10</id>
+      <facing>6</facing>
+      <connectionname>Input 8</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <classname>CONTACT_SENSOR</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>11</id>
+      <facing>6</facing>
+      <connectionname>Output 1</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <classname>RELAY</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>12</id>
+      <facing>6</facing>
+      <connectionname>Output 2</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <classname>RELAY</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>13</id>
+      <facing>6</facing>
+      <connectionname>Output 3</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <classname>RELAY</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>14</id>
+      <facing>6</facing>
+      <connectionname>Output 4</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <classname>RELAY</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>15</id>
+      <facing>6</facing>
+      <connectionname>Output 5</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <classname>RELAY</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>16</id>
+      <facing>6</facing>
+      <connectionname>Output 6</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <classname>RELAY</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>17</id>
+      <facing>6</facing>
+      <connectionname>Output 7</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <classname>RELAY</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>18</id>
+      <facing>6</facing>
+      <connectionname>Output 8</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <classname>RELAY</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>19</id>
+      <facing>6</facing>
+      <connectionname>Output 9</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <classname>RELAY</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>20</id>
+      <facing>6</facing>
+      <connectionname>Output 10</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <classname>RELAY</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>21</id>
+      <facing>6</facing>
+      <connectionname>Output 11</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <classname>RELAY</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>22</id>
+      <facing>6</facing>
+      <connectionname>Output 12</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <classname>RELAY</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>23</id>
+      <facing>6</facing>
+      <connectionname>Output 13</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <classname>RELAY</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>24</id>
+      <facing>6</facing>
+      <connectionname>Output 14</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <classname>RELAY</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>25</id>
+      <facing>6</facing>
+      <connectionname>Output 15</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <classname>RELAY</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>26</id>
+      <facing>6</facing>
+      <connectionname>Output 16</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <classname>RELAY</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>201</id>
+      <facing>6</facing>
+      <connectionname>Output 1 Toggle</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>True</linelevel>
+      <classes>
+        <class>
+          <classname>BUTTON_LINK</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>202</id>
+      <facing>6</facing>
+      <connectionname>Output 2 Toggle</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>True</linelevel>
+      <classes>
+        <class>
+          <classname>BUTTON_LINK</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>203</id>
+      <facing>6</facing>
+      <connectionname>Output 3 Toggle</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>True</linelevel>
+      <classes>
+        <class>
+          <classname>BUTTON_LINK</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>204</id>
+      <facing>6</facing>
+      <connectionname>Output 4 Toggle</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>True</linelevel>
+      <classes>
+        <class>
+          <classname>BUTTON_LINK</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>205</id>
+      <facing>6</facing>
+      <connectionname>Output 5 Toggle</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>True</linelevel>
+      <classes>
+        <class>
+          <classname>BUTTON_LINK</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>206</id>
+      <facing>6</facing>
+      <connectionname>Output 6 Toggle</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>True</linelevel>
+      <classes>
+        <class>
+          <classname>BUTTON_LINK</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>207</id>
+      <facing>6</facing>
+      <connectionname>Output 7 Toggle</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>True</linelevel>
+      <classes>
+        <class>
+          <classname>BUTTON_LINK</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>208</id>
+      <facing>6</facing>
+      <connectionname>Output 8 Toggle</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>True</linelevel>
+      <classes>
+        <class>
+          <classname>BUTTON_LINK</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>209</id>
+      <facing>6</facing>
+      <connectionname>Output 9 Toggle</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>True</linelevel>
+      <classes>
+        <class>
+          <classname>BUTTON_LINK</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>210</id>
+      <facing>6</facing>
+      <connectionname>Output 10 Toggle</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>True</linelevel>
+      <classes>
+        <class>
+          <classname>BUTTON_LINK</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>211</id>
+      <facing>6</facing>
+      <connectionname>Output 11 Toggle</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>True</linelevel>
+      <classes>
+        <class>
+          <classname>BUTTON_LINK</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>212</id>
+      <facing>6</facing>
+      <connectionname>Output 12 Toggle</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>True</linelevel>
+      <classes>
+        <class>
+          <classname>BUTTON_LINK</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>213</id>
+      <facing>6</facing>
+      <connectionname>Output 13 Toggle</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>True</linelevel>
+      <classes>
+        <class>
+          <classname>BUTTON_LINK</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>214</id>
+      <facing>6</facing>
+      <connectionname>Output 14 Toggle</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>True</linelevel>
+      <classes>
+        <class>
+          <classname>BUTTON_LINK</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>215</id>
+      <facing>6</facing>
+      <connectionname>Output 15 Toggle</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>True</linelevel>
+      <classes>
+        <class>
+          <classname>BUTTON_LINK</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>216</id>
+      <facing>6</facing>
+      <connectionname>Output 16 Toggle</connectionname>
+      <type>1</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>True</linelevel>
+      <classes>
+        <class>
+          <classname>BUTTON_LINK</classname>
+        </class>
+      </classes>
+    </connection>
+    <connection>
+      <id>5001</id>
+      <facing>6</facing>
+      <connectionname>Light 1</connectionname>
+      <type>2</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <autobind>False</autobind>
+          <classname>LIGHT</classname>
+        </class>
+      </classes>
+      <hidden>False</hidden>
+    </connection>
+    <connection>
+      <id>5002</id>
+      <facing>6</facing>
+      <connectionname>Light 2</connectionname>
+      <type>2</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <autobind>False</autobind>
+          <classname>LIGHT</classname>
+        </class>
+      </classes>
+      <hidden>False</hidden>
+    </connection>
+    <connection>
+      <id>5003</id>
+      <facing>6</facing>
+      <connectionname>Light 3</connectionname>
+      <type>2</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <autobind>False</autobind>
+          <classname>LIGHT</classname>
+        </class>
+      </classes>
+      <hidden>False</hidden>
+    </connection>
+    <connection>
+      <id>5004</id>
+      <facing>6</facing>
+      <connectionname>Light 4</connectionname>
+      <type>2</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <autobind>False</autobind>
+          <classname>LIGHT</classname>
+        </class>
+      </classes>
+      <hidden>False</hidden>
+    </connection>
+    <connection>
+      <id>5005</id>
+      <facing>6</facing>
+      <connectionname>Light 5</connectionname>
+      <type>2</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <autobind>False</autobind>
+          <classname>LIGHT</classname>
+        </class>
+      </classes>
+      <hidden>False</hidden>
+    </connection>
+    <connection>
+      <id>5006</id>
+      <facing>6</facing>
+      <connectionname>Light 6</connectionname>
+      <type>2</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <autobind>False</autobind>
+          <classname>LIGHT</classname>
+        </class>
+      </classes>
+      <hidden>False</hidden>
+    </connection>
+    <connection>
+      <id>5007</id>
+      <facing>6</facing>
+      <connectionname>Light 7</connectionname>
+      <type>2</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <autobind>False</autobind>
+          <classname>LIGHT</classname>
+        </class>
+      </classes>
+      <hidden>False</hidden>
+    </connection>
+    <connection>
+      <id>5008</id>
+      <facing>6</facing>
+      <connectionname>Light 8</connectionname>
+      <type>2</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <autobind>False</autobind>
+          <classname>LIGHT</classname>
+        </class>
+      </classes>
+      <hidden>False</hidden>
+    </connection>
+    <connection>
+      <id>5009</id>
+      <facing>6</facing>
+      <connectionname>Light 9</connectionname>
+      <type>2</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <autobind>False</autobind>
+          <classname>LIGHT</classname>
+        </class>
+      </classes>
+      <hidden>False</hidden>
+    </connection>
+    <connection>
+      <id>5010</id>
+      <facing>6</facing>
+      <connectionname>Light 10</connectionname>
+      <type>2</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <autobind>False</autobind>
+          <classname>LIGHT</classname>
+        </class>
+      </classes>
+      <hidden>False</hidden>
+    </connection>
+    <connection>
+      <id>5011</id>
+      <facing>6</facing>
+      <connectionname>Light 11</connectionname>
+      <type>2</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <autobind>False</autobind>
+          <classname>LIGHT</classname>
+        </class>
+      </classes>
+      <hidden>False</hidden>
+    </connection>
+    <connection>
+      <id>5012</id>
+      <facing>6</facing>
+      <connectionname>Light 12</connectionname>
+      <type>2</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <autobind>False</autobind>
+          <classname>LIGHT</classname>
+        </class>
+      </classes>
+      <hidden>False</hidden>
+    </connection>
+    <connection>
+      <id>5013</id>
+      <facing>6</facing>
+      <connectionname>Light 13</connectionname>
+      <type>2</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <autobind>False</autobind>
+          <classname>LIGHT</classname>
+        </class>
+      </classes>
+      <hidden>False</hidden>
+    </connection>
+    <connection>
+      <id>5014</id>
+      <facing>6</facing>
+      <connectionname>Light 14</connectionname>
+      <type>2</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <autobind>False</autobind>
+          <classname>LIGHT</classname>
+        </class>
+      </classes>
+      <hidden>False</hidden>
+    </connection>
+    <connection>
+      <id>5015</id>
+      <facing>6</facing>
+      <connectionname>Light 15</connectionname>
+      <type>2</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <autobind>False</autobind>
+          <classname>LIGHT</classname>
+        </class>
+      </classes>
+      <hidden>False</hidden>
+    </connection>
+    <connection>
+      <id>5016</id>
+      <facing>6</facing>
+      <connectionname>Light 16</connectionname>
+      <type>2</type>
+      <consumer>False</consumer>
+      <audiosource>False</audiosource>
+      <videosource>False</videosource>
+      <linelevel>False</linelevel>
+      <classes>
+        <class>
+          <autobind>False</autobind>
+          <classname>LIGHT</classname>
+        </class>
+      </classes>
+      <hidden>False</hidden>
+    </connection>
+  </connections>
+  <controlmethod>serial</controlmethod>
+</devicedata>
