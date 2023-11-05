@@ -1,0 +1,26 @@
+<devicedata>
+  <version>1</version>
+  <manufacturer>Default Manufacturer</manufacturer>
+  <model>Default Model</model>
+  <search_type>c4:av_gen</search_type>
+  <creator>Control4 (support@control4.com)</creator>
+  <name>Default Driver Name</name>
+  <small>devices_sm/C4.gif</small>
+  <large>devices_lg/C4.gif</large>
+  <control>lua_gen</control>
+  <controlmethod>ip</controlmethod>
+  <driver>DriverWorks</driver>
+  <copyright>Copyright 2004-2014 Control4 Corporation.  All rights reserved.</copyright>
+  <created></created>
+  <modified></modified>
+  <proxies qty="1">
+    <proxy>tv</proxy>
+  </proxies>
+  <config>
+    <script></script>
+  </config>
+  <connections>
+  </connections>
+  <capabilities>
+  </capabilities>
+</devicedata>
